@@ -1,0 +1,25 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.centered-nav .w3-bar-item {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .w3-bar.centered-nav {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.w3-bar {
+    padding: 10px 0;
+}
+
+.w3-bar-item {
+    padding: 15px 10px;
+    font-size:large
+}
+
+
