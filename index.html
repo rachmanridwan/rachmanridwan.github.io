@@ -1,95 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Ridwan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="/rachmanridwan.github.io/images/icon.png">
-    <link rel="stylesheet" href="/rachmanridwan.github.io/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/mediaqueries.css">
   </head>
 <body>
   <!--Navigation Bar-->
-  <div class="w3-bar w3-white centered-nav">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#about" class="w3-bar-item w3-button">About</a>
-    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-  </div>
-<!-- Page Content -->
-<div class="w3-main w3-padding-large">
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Rachman Ridwan</b></h1>
-      <p>Part-Time Student, Full-Time Learner</p>
-      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> Download Portofolio
-    </button>
-  </header>
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-      <p>As the digital industry grows exponentially, IT Engineer becomes a major key in this fast-changing future. I'm an expert at adapting, Currently into Cybersecurity because watching TV series called 'Mr Robot'.
-      </p>
-      <h3 class="w3-padding-16">My Skills</h3>
-        <p class="w3-wide">C++</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
-        </div>
-        <p class="w3-wide">Photography</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide">Linux</p>
-        <div class="w3-light-grey">
-          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:30%">30%</div>
-        </div><br>
-
-    <!-- Experience Section -->
-      <div class="w3-padding-32 w3-content" id="portfolio">
-        <h2 class="w3-text-grey">Experiences</h2>
-        <hr class="w3-opacity">
-      <ul>
-        <li>Schematics | Leader of Fundraising Division</li>
-        <li>BENEFITS | Treasurer</li>
-      </ul>
-  <!-- End Experience Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact</h2>
-    <hr class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Kota Surabaya, Indonesia</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +62 8222 9313991</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> rachmanridwan@gmail.com</p>
+  <nav id="desktop-nav">
+    <div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     </div>
-  <!-- End Contact Section -->
-  </div>  
-  <!-- END PAGE CONTENT -->
-</div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-redhood.jpg" alt="Rachman Ridwan">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hi, I'm</p>
+      <h1 class="title">Rachman Ridwan</h1>
+      <p class="section__text__p2">Fullstack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rachmanridwan/'">
+        <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://www.github.com/rachmanridwan/'">
+      </div>
+    </div>
+  </section>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+          <h3>Experience</h3>
+          <p>1+ years <br />Software Engineering</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon"/>
+          <h3>Education</h3>
+          <p>B.C.S. Bachelors Degree</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem, dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!</p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./experience'"/>
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">PT. Telekomunikasi Indonesia (Persero) Tbk.</h2>
+        <div class="article-container">
+          <article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px 0; padding-left:0; padding-right:0;">
-    <a href="https://www.facebook.com/rachman.ridwan.336/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/rachmnridwan/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/rachmanridwan/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-small">Last updated on September 6th 2022</p>
-    <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey" href="#" target="_blank">Back to Homepage</a>  
-    <!-- End footer -->
-  </footer>
-
-
-<script>
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
