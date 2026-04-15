@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ridwan</title>
+    <title>Rachman Ridwan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="/images/icon.png">
@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="/mediaqueries.css">
   </head>
 <body>
-  <!--Navigation Bar-->
+
+  <!-- Desktop Navigation -->
   <nav id="desktop-nav">
-    <div>
+    <div class="logo">Rachman Ridwan</div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    </div>
   </nav>
+
+  <!-- Hamburger Navigation -->
   <nav id="hamburger-nav">
+    <div class="logo">Rachman Ridwan</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
         <span></span>
@@ -28,75 +32,273 @@
         <span></span>
       </div>
       <div class="menu-links">
-        <li><a href="#" onclick="toggleMenu()">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Hero / Profile -->
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/profile-redhood.jpg" alt="Rachman Ridwan">
+      <img src="./assets/profile-redhood.jpg" alt="Rachman Ridwan Profile Photo">
     </div>
     <div class="section__text">
       <p class="section__text__p1">Hi, I'm</p>
       <h1 class="title">Rachman Ridwan</h1>
-      <p class="section__text__p2">Fullstack Developer</p>
+      <p class="section__text__p2">IT Analyst &amp; Full-stack Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV_Rachman Ridwan.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rachmanridwan/'">
-        <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://www.github.com/rachmanridwan/'">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn Profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/rachmanridwan/'"
+        >
+        <img
+          src="./assets/github.png"
+          alt="GitHub Profile"
+          class="icon"
+          onclick="location.href='https://www.github.com/rachmanridwan/'"
+        >
       </div>
     </div>
   </section>
-<section id="about">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
-    </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
-          <h3>Experience</h3>
-          <p>1+ years <br />Software Engineering</p>
-        </div>
-        <div class="details-container">
-          <img src="./assets/education.png" alt="Education icon" class="icon"/>
-          <h3>Education</h3>
-          <p>B.C.S. Bachelors Degree</p>
-        </div>
-      </div>
-      <div class="text-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem, dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolorum cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!</p>
-      </div>
-    </div>
-  </div>
-  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./experience'"/>
-</section>
-<section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-sub-title">PT. Telekomunikasi Indonesia (Persero) Tbk.</h2>
-        <div class="article-container">
-          <article>
-            
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<script src="script.js"></script>
+  <!-- About -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>1+ years<br>Software Engineering</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>B.Informatics<br>Institut Teknologi Sepuluh Nopember</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Fresh graduate in Informatics from Institut Teknologi Sepuluh Nopember
+            (GPA 3.32/4.00) with hands-on experience delivering technology solutions
+            at two Danantara portfolio companies. I translate complex operational
+            problems into measurable technical outcomes — combining software engineering
+            depth with business-oriented communication to make findings accessible
+            to stakeholders at every level.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#skills'"
+    >
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <p class="section__text__p1">My Technical</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-container">
+      <div class="skills-group">
+        <h3>Programming Languages</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">C++</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Cloud &amp; Backend</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">Google Cloud Platform</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">Full-stack Development</span>
+          <span class="skill-tag">Database Management</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Methodology &amp; Soft Skills</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">Project Management</span>
+          <span class="skill-tag">Leadership</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Critical Thinking</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Certifications &amp; Languages</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">Google PM Professional</span>
+          <span class="skill-tag">IBM IT Support</span>
+          <span class="skill-tag">Bangkit Academy Graduate</span>
+          <span class="skill-tag">IELTS Band 6.5</span>
+          <span class="skill-tag">English (Advanced)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <p class="section__text__p1">My Professional</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-list">
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-company">PT. Bank Tabungan Negara (Persero) Tbk.</h3>
+            <p class="exp-role">IT Analyst Intern &mdash; Jakarta, Indonesia</p>
+          </div>
+          <span class="exp-date">Dec 2025 &ndash; Present</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Architected and deployed data leads to BTN Smart platform consolidating 130,000+ customer records across 6 product pillars for 80+ branches and 9 regional offices, directly supporting Rp 100M+ SMEs credit realization.</li>
+          <li>Delivered 99% reduction in executive reporting time (60 min &rarr; &lt;1 min) by replacing manual Excel workflows with an automated full-stack credit monitoring application, enabling real-time division-level visibility for management.</li>
+          <li>Strengthened system integrity by identifying 27 critical API stability and integration defects in BTN Laku mobile banking through structured QA &mdash; mitigating go-live risk across a nationwide consumer-facing product.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-company">Jexa IT Consulting</h3>
+            <p class="exp-role">IT Consultant &mdash; Jakarta, Indonesia</p>
+          </div>
+          <span class="exp-date">Aug 2025 &ndash; Dec 2025</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Owned end-to-end client delivery across 6 SME engagements (retail, manufacturing, F&amp;B, sports brand) &mdash; from requirements scoping through development, deployment, and UAT, managing total project value exceeding Rp 10M+.</li>
+          <li>Designed and implemented business-critical systems including POS, ERP modules, and e-commerce platforms, tailored to each client's operational model and growth trajectory.</li>
+          <li>Managed full project lifecycle: requirements gathering, solution architecture, team coordination, UAT, and deployment, with average project completion time of 24 weeks.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-company">PT. Telekomunikasi Indonesia (Persero) Tbk.</h3>
+            <p class="exp-role">Full-stack Developer Intern &mdash; Surabaya, Indonesia</p>
+          </div>
+          <span class="exp-date">Dec 2023 &ndash; Mar 2024</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Delivered 96% application performance improvement on a network infrastructure platform managing 10,000+ records across 13 regional offices in East Java &mdash; resolving a systemic bottleneck through query optimization and caching refactoring.</li>
+          <li>Built a real-time operational monitoring dashboard with validation tracking, performance metrics, and Excel export capabilities for HQ oversight, improving operational visibility at regional scale.</li>
+          <li>Designed and implemented a validation workflow system for network infrastructure platform serving 13 regional telecommunications offices (Witel) in East Java.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-company">Bangkit Academy 2023 by Google, GoTo &amp; Traveloka</h3>
+            <p class="exp-role">Cloud Computing Cohort &mdash; Bandung, Indonesia</p>
+          </div>
+          <span class="exp-date">Feb 2023 &ndash; Jul 2023</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Learned cloud computing fundamentals including cloud architecture, backend development, RESTful APIs, security, and deployment using Google Cloud Platform (GCP).</li>
+          <li>Led back-end development for capstone project SingerHub, designing and developing a RESTful API to support user authentication and user profile management for a platform connecting singers with gig owners.</li>
+          <li>Earned Google Cloud certifications, validating hands-on skills in cloud infrastructure, application deployment, and cloud-based solution design.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <!-- Category Filter -->
+    <div class="project-filter">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Full-stack">Full-stack</button>
+      <button class="filter-btn" data-filter="Web App">Web App</button>
+      <button class="filter-btn" data-filter="Personal">Personal</button>
+    </div>
+
+    <!-- Projects Grid (populated by JS) -->
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close project modal">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="modal-image-wrap">
+        <img id="modal-img" src="" alt="" class="modal-img">
+        <span class="modal-badge" id="modal-badge"></span>
+      </div>
+      <div class="modal-body">
+        <p class="modal-meta" id="modal-meta"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-tech" id="modal-tech"></div>
+        <div class="modal-stats" id="modal-stats"></div>
+        <a class="modal-link btn btn-color-1" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">
+          Visit Project &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+        <p><a href="mailto:rachmanridwan@gmail.com">rachmanridwan@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/rachmanridwan/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rachmanridwan</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <ul class="nav-links footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">Copyright &copy; 2025 Rachman Ridwan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
